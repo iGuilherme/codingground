@@ -1,1 +1,30 @@
-
+#include <stdio.h>
+int main(void)
+{
+    int opcao;
+    float val;
+    printf(" Digite o valor dos produtos\n");
+    scanf("%f", &val);
+    printf("Escolha o número referente a forma de pagamento desejada\n 1 Venda a Vista\n 2 Venda a Prazo 30 dias\n 3 Venda a Prazo 60 dias\n 4 venda a prazo 90 dias\n 5 Venda com Cartão de Débito\n 6 Venda com Cartão de Crédito\n");
+    scanf("%d", &opcao);
+    switch(opcao){
+    case 1:
+    printf("Valor da venda = R$%.2f - Tipo de venda: Venda a vista\n", val); // Esse .2 antes do f  Significa que a gente quer 2 casas depois da virgula do número do valor.
+    break;
+    case 2:
+    printf("Valor da venda = R$%.2f - Tipo de venda: Venda a prazo 30 dias\n", val);// Esse .2 antes do f  Significa que a gente quer 2 casas depois da virgula do número do valor.
+    break;
+    case 3:
+    printf("Valor da venda = R$%.2f - Tipo de venda: Venda a prazo 60 dias\n", val);// Esse .2 antes do f  Significa que a gente quer 2 casas depois da virgula do número do valor.
+    break;
+    case 4:
+    printf("Valor da venda = R$%.2f - Tipo de venda: Venda a prazo 90 dias\n", val);// Esse .2 antes do f  Significa que a gente quer 2 casas depois da virgula do número do valor.
+    break;
+    case 5:
+    printf("Valor da venda = R$%.2f - Tipo de venda: Venda com Cartão de Débito\n", val);// Esse .2 antes do f  Significa que a gente quer 2 casas depois da virgula do número do valor.
+    break;
+    case 6:
+    printf("Valor da venda = R$%.2f - Tipo de venda: Venda com Cartão de Crédito\n", val);// Esse .2 antes do f  Significa que a gente quer 2 casas depois da virgula do número do valor.
+    break;}
+      return 0;  
+    }
