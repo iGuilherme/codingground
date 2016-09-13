@@ -3,7 +3,7 @@ int main(void)
 {
     int idade;
     printf ("digite sua idade:");
-    scanf ("%d", idade);
+    scanf ("%d", &idade);
     
     if (idade<18){
         printf ("Menor de idade !");
