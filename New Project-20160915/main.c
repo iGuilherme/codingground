@@ -2,14 +2,14 @@
 
 int main(void)
 {
-
-  Do {
+ int m=2;
+ Do {
      printf ("Gordox");
      
  }
+ while ("m=2");
  
  return 0;
 }
-
 
 
