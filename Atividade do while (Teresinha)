@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    int n=0;
+    while (n<=3){
+    if(++n==1){
+        printf("    \nO primeiro me chegou\n Como quem vem do florista:\n Trouxe um bicho de pelúcia,\n Trouxe um broche de ametista.\n Me contou suas viagens\n E as vantagens que ele tinha.\n Me mostrou o seu relógio;\n Me chamava de rainha.\n\n Dentro do meu coração.\n Me encontrou tão desarmada,\n Que tocou meu coração,\n Mas não me negava nada\n E, assustada, eu disse não.\n\n");
+    }
+    if(++n==2){
+        printf("    O segundo me chegou\n Como quem chega do bar:\n Trouxe um litro de aguardente\n Tão amarga de tragar.\n Indagou o meu passado\n E cheirou minha comida.\n Vasculhou minha gaveta;\n Indagou o meu passado\n E cheirou minha comida.\n Vasculhou minha gaveta;\n Me chamava de perdida.\n\n Indagou o meu passado\n E cheirou minha comida.\n Vasculhou minha gaveta;\n Me chamava de perdida.\n Me encontrou tão desarmada,\n Que arranhou meu coração\n Mas não me entregava nada\n Que arranhou meu coração,\n Mas não me entregava nada\n E, assustada, eu disse não\n\n");
+    }
+    if(++n==3){
+        printf("    O terceiro me chegou\n Como quem chega do nada:\n Ele não me trouxe nada,\n Como quem chega do nada:\n Ele não me trouxe nada,\n Também nada perguntou.\n Mal sei como ele se chama,\n Mas entendo o que ele quer!\n Se deitou na minha cama\n E me chama de mulher.\n\n Foi chegando sorrateiro\n E antes que eu dissesse não,\n Se instalou feito um posseiro\n Dentro do meu coração.\n ___________________\n\n ");
+            }
+        }
+    return 0;
+    }
