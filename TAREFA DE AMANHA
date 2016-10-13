@@ -19,4 +19,26 @@ return ((x+y)/2*0.8)+z;
  
  Segunda parte -
  
+ #include <stdio.h>
+float media (float x, float y, float z);
+int main ( ) {
+    int m=0;
+ Do {
+float n1,n2,c;
+printf ("Digite a sua primeira nota \n");
+scanf ("%f",&n1);
+printf ("Digite sua segunda nota \n");
+scanf ("%f",&n2);
+printf ("Digite seu conceito teu merda \n");
+scanf ("%f",&c);
+printf ("Sua nota e %.1f \n", media(n1,n2,c));
+}
+while ("m<3");
+m++;
+return 0;
+}
+float media (float x, float y, float z){
+return ((x+y)/2*0.8)+z;
+}
+
  
