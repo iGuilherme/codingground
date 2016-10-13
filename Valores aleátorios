@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int g;
+    printf ("Nota sorteada para o quarto bimestre \n");
+    
+    for (g=0 ; g<1 ; g++)
+{
+    printf (" foi %d: \n\n\n", rand () % 100 );
+    
+}
+    return 0;
+}
