@@ -18,11 +18,10 @@ return ((x+y)/2*0.8)+z;
 }
  
  Segunda parte -
- 
-#include <stdio.h>
+ #include <stdio.h>
 float media (float x, float y, float z);
 int main ( ) {
-    int m=0;
+    int m=1;
  do {
 float n1,n2,c;
 printf ("Digite a sua primeira nota \n");
@@ -40,4 +39,3 @@ return 0;
 float media (float x, float y, float z){
 return ((x+y)/2*0.8)+z;
 }
- 
