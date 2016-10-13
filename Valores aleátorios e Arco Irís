@@ -1,14 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <conio.h>
+
 int main()
 {
+    system ("COLOR 9");
     int g;
     printf ("Nota sorteada para o quarto bimestre \n");
-    
+
     for (g=0 ; g<1 ; g++)
 {
     printf (" foi %d: \n\n\n", rand () % 100 );
-    
+
 }
     return 0;
 }
