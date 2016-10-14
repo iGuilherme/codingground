@@ -44,3 +44,49 @@ return ((x+y)/2*0.8)+z;
 
 Terceira parte -
 
+
+#include <stdio.h>
+#include <stdlib.h>
+float media (float x, float y, float z);
+float B4 ();
+int main ( ) {
+    int m=1;
+ do {
+float n1,n2,c;
+printf ("Digite a sua primeira nota \n");
+scanf ("%f",&n1);
+printf ("Digite sua segunda nota \n");
+scanf ("%f",&n2);
+printf ("Digite seu conceito teu merda \n");
+scanf ("%f",&c);
+printf ("Sua nota e %.1f \n", media(n1,n2,c));
+m++;
+}
+while (m<=3);
+printf("A nota do 4 Bimestre e %.1f \n" ,B4);
+
+return 0;
+}
+float media (float x, float y, float z){
+return ((x+y)/2*0.8)+z;
+}
+
+
+
+float B4(void)
+{
+    int g;
+    printf ("Nota sorteada para o quarto bimestre \n");
+
+    for (g=0 ; g<1 ; g++)
+{
+    printf (" foi %d: \n\n\n", rand () % 10 );
+
+}
+return 0;
+}
+
+
+
+Quarta parte -
+
