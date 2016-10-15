@@ -1,1 +1,88 @@
 
+PARTE 1 ------- >
+
+
+
+#include <stdio.h>
+float MB1 ();
+float MB2 ();
+float MB3 ();
+float B4  ();
+float Media_Anual(float MB1,float MB2,float MB3,float B4);
+int main()
+{
+
+ MB1();
+ MB2();
+ MB3();
+ B4 ();
+ //float Media_Anual(float MB1,float MB2,float MB3,float B4);
+// printf("Media anual é ",Media_Anual(MB1,MB2,MB3,B4));
+    return 0;
+}
+float MB1()
+{
+float    b1,a,b,c;
+    printf("Insira a nota da primeira prova do primeiro bimestre\n\n");
+    scanf("%f",&a);
+      printf("Insira a nota da segunda prova do primeiro bimestre\n\n");
+     scanf("%f",&b);
+       printf("Insira a nota do conceito\n\n");
+      scanf("%f",&c);
+        b1=(((a+b)/2)*0.8)+c;
+    printf("O aluno teve como nota bimestral do primeiro bimestre: %.1f\n\n",b1);
+ return b1;
+}
+float MB2()
+{
+float    b2,d,e,f;
+    printf("Insira a nota da primeira prova do segundo bimestre\n\n");
+    scanf("%f",&d);
+      printf("Insira a nota da segunda prova do segundo bimestre\n\n");
+     scanf("%f",&e);
+       printf("Insira a nota do conceito\n\n");
+      scanf("%f",&f);
+       b2=(((d+e)/2)*0.8)+f;
+    printf("O aluno teve como nota do 2 bimestre: %.1f\n\n",b2);
+ return b2;
+}
+float MB3()
+{
+float   b3,g,h,i;
+    printf("Insira a nota da primeira prova do terceiro bimestre \n\n");
+    scanf("%f",&g);
+      printf("Insira a nota da segunda prova do terceiro bimestre \n\n");
+     scanf("%f",&h);
+       printf("Insira a nota do conceito\n\n");
+      scanf("%f",&i);
+        b3=(((g+h)/2)*0.8)+i;
+    printf("O aluno teve como nota do 3 bimestre:%.1f\n\n",b3);
+ return b3;
+}
+float B4()
+{ int g;
+    printf ("Nota sorteada para o 4 bimestre ");
+
+    for (g=0 ; g<1 ; g++)
+{
+    printf (" foi %d: \n\n\n", rand () % 11 );
+
+}
+return 0;
+}
+float Media_Anual(float MB1,float MB2,float MB3,float B4)
+{
+    float anual;
+printf("Para saber sua nota anual digite suas medias do 1 bimestre, 2 bimestre, terceiro bimestre e quarto bimestre");
+    anual=( MB1*2+ MB2*2+ MB3*3+ B4*3)/10;
+    return anual;
+}
+
+
+
+SEGUNDA PARTE  ------>
+
+
+
+
+
