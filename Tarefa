@@ -1,0 +1,91 @@
+#include <stdio.h>
+#include <stdlib.h>
+float MB1 (float a,float b,float c);
+float MB2(float d,float e,float f);
+float MB3(float g,float h, float i);
+float B4  (float x);
+int main()
+{
+float l;
+float p1,p2,c1;
+  float p3,p4,c2;
+    float p5,p6,c3;
+        float anual,pf,npf;
+            int p7=0;
+            int dp=0;
+            int k;
+            for(k=1;k<=17;k++)
+{
+    printf("Materia %i\n",k);
+ printf("Insira a nota da primeira prova do primeiro bimestre\n\n");
+    scanf("%f",&p1);
+      printf("Insira a nota da segunda prova do primeiro bimestre\n\n");
+        scanf("%f",&p2);
+            printf("Insira a nota do conceito\n\n");
+                scanf("%f",&c1);
+                    printf("O aluno teve como nota bimestral do primeiro bimestre: %.1f\n\n",MB1(p1,p2,c1));
+ printf("Insira a nota da primeira prova do segundo bimestre\n\n");
+    scanf("%f",&p3);
+      printf("Insira a nota da segunda prova do segundo bimestre\n\n");
+        scanf("%f",&p4);
+            printf("Insira a nota do conceito\n\n");
+                scanf("%f",&c2);
+                    printf("O aluno teve como nota do 2 bimestre: %.1f\n\n",MB2(p3,p4,c2));
+ printf("Insira a nota da primeira prova do terceiro bimestre \n\n");
+    scanf("%f",&p5);
+      printf("Insira a nota da segunda prova do terceiro bimestre \n\n");
+        scanf("%f",&p6);
+            printf("Insira a nota do conceito\n\n");
+                scanf("%f",&c3);
+                    printf("O aluno teve como nota do 3 bimestre:%.1f\n\n",MB3(p3,p5,c3));
+ printf("Nota sorteada para o 4 bimestre  foi %.1f\n",B4(p7));
+    anual=(MB1(p1,p2,c1)*2+MB2(p3,p4,c2)*2+MB3(p5,p6,c3)*3+B4(p7)*3)/10;
+        if(anual<6){
+        printf("O aluno esta com %.1f",anual);
+ printf("O aluno esta de PF nessa materia\n");
+ printf("Digite quanto o aluno tirou na PF\n");
+ scanf("%f",&pf);
+ printf("O aluno esta com %.1f",anual);
+ npf=(anual+pf)/2;
+ if(npf<6){
+        printf("O aluno esta de dependencia\n");
+        dp++;
+    }else
+    {
+    printf("O aluno esta aprovado nessa materia\n\n");
+    printf("________________________________________________________________________________________________\n");
+    }
+    }else{
+
+ printf("O aluno esta aprovado nessa materia, media anual foi:");
+ printf("%.1f\n\n",anual);
+ printf("________________________________________________________________________________________________\n");
+    }
+
+}
+    if(dp>2){
+        printf("O aluno esta reprovado de ano\n");
+               
+    }else{
+        printf("______________________________________________________\n");
+    printf("\t\tO aluno passou de ano\n");
+    }
+    printf("O aluno ficou em %i Dependencias",dp);
+    return 0;
+}
+float MB1(float a,float b,float c)
+{
+    return (((a+b)/2)*0.8)+c;
+}
+float MB2(float d,float e,float f)
+{
+    return (((d+e)/2)*0.8)+f;
+}
+float MB3(float g,float h, float i)
+{
+    return (((g+h)/2)*0.8)+i;
+}
+float B4(float x)
+{
+return rand () % 11 ;
+}
