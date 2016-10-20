@@ -47,7 +47,7 @@ float p1,p2,c1;
  scanf("%f",&pf);
  printf("O aluno esta com %.1f",anual);
  npf=(anual+pf)/2;
- if(npf<6){
+ if(npf<5){
         printf("O aluno esta de dependencia\n");
         dp++;
     }else
