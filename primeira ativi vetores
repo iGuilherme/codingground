@@ -1,0 +1,11 @@
+#include <stdio.h>
+    int main (void)
+{
+    int n[11];
+    int tab, resul;
+        for(tab=0;tab<11;tab++){
+        n[tab]=7*tab;
+        printf("%d\n", n[tab]);
+        }
+return 0;
+}
