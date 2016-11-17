@@ -1,6 +1,6 @@
 #include <stdio.h>
-char VerificaAtleta (char sexo, float peso);
 int main (void){
+    char VerificaAtleta (char sexo,float peso);
     char modalidad[15];
     char sex;
     float pes;
@@ -12,15 +12,15 @@ int main (void){
     scanf("%f",&pes);
     for(i=0;i<15;i++)
     {
-        VerificaAtleta(sex,pes)=modalidad[15];
-    printf ("A modalidade do atleta eh %s \n",modalidad[i]);
+       modalidad[15]=VerificaAtleta(sex,pes);
+    printf ("A modalidade do atleta eh %s \n",modalidad[15]);
 }
    }
    return 0;
    }
 
    char VerificaAtleta (char sexo, float peso){
-       char modalidade;
+       char modalidade;      
    if (sexo=='m'){
    if (peso<=55){
    modalidade='SuperLigeiro';
@@ -46,3 +46,5 @@ int main (void){
    }
    return modalidade;
    }
+
+
