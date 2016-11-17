@@ -8,13 +8,13 @@ int main (void){
     float pes;
     int cont=1;
 
-    for (cont=1;cont<=20;cont++);
+    for (cont=1;cont<=20;cont++){
 
     printf ("Digite seu sexo! \n");
     scanf ("%c", & sex);
     printf ("Digite seu peso");
     scanf ("%f", & pes);
-    printf ("A modalidade do atleta é %c \n");
+    printf ("A modalidade do atleta eh %c \n");
 
     VerificaAtleta (sex,pes);
 
@@ -22,7 +22,7 @@ int main (void){
    return 0;
    }
 
-   char modalidade;
+   char modalidade{
    if (sexo=='m'){
    if (peso<=55){
    modalidade=SuperLigeiro;
