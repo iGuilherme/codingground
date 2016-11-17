@@ -1,49 +1,47 @@
 #include <stdio.h>
-
 char VerificaAtleta (char sexo, float peso);
-
 int main (void){
-
+    char modalidad[15];
     char sex;
     float pes;
-    int cont=1;
-
+    int cont=1,i;
     for (cont=1;cont<=20;cont++){
-
-    printf ("Digite seu sexo! \n");
-    scanf ("%c", & sex);
-    printf ("Digite seu peso");
-    scanf ("%f", & pes);
-    printf ("A modalidade do atleta eh %c \n");
-
-    VerificaAtleta (sex,pes);
-
+    printf("Digite seu sexo!\n");
+    scanf("%c",&sex);
+    printf("Digite seu peso");
+    scanf("%f",&pes);
+    for(i=0;i<15;i++)
+    {
+        modalidad[15]=VerificaAtleta(sex,pes);
+    printf ("A modalidade do atleta eh %s \n",modalidad[i]);
+}
    }
    return 0;
    }
 
-   char modalidade{
+   char VerificaAtleta (char sexo, float peso){
+       char modalidade;
    if (sexo=='m'){
    if (peso<=55){
-   modalidade=SuperLigeiro;
+   modalidade='SuperLigeiro';
    }
 
    if (peso>=66 & peso <=73){
-        modalidade=leve;
+        modalidade='leve';
    }
    if (peso>=83 & peso <=90){
-        modalidade=media;
+        modalidade='media';
    }
    }
    if (sexo=='f'){
         if (peso<=50){
-                modalidade=SuperLigeiro;
+                modalidade='SuperLigeiro';
         }
         if (peso>=60 & peso <=70){
-                modalidade=leve;
+                modalidade='leve';
         }
-        if (peso>=77 & peso=<85){
-                modalidade=media;
+        if (peso>=77 & peso<=85){
+                modalidade='media';
         }
    }
    return modalidade;
