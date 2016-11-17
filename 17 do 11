@@ -12,7 +12,7 @@ int main (void){
     scanf("%f",&pes);
     for(i=0;i<15;i++)
     {
-        modalidad[15]=VerificaAtleta(sex,pes);
+        VerificaAtleta(sex,pes)=modalidad[15];
     printf ("A modalidade do atleta eh %s \n",modalidad[i]);
 }
    }
