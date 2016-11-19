@@ -8,12 +8,12 @@ int main (void){
     for (cont=1;cont<=20;cont++){
     printf("Digite seu sexo!\n");
     scanf("%c",&sex);
-    printf("Digite seu peso");
+    printf("Digite seu peso !\n");
     scanf("%f",&pes);
 
     {
-       modalidad[cont-1]=VerificaAtleta(sex,pes);
-    printf ("A modalidade do atleta eh %s \n",modalidad[cont-1]);
+       modalidad[20]=VerificaAtleta(sex,pes);
+    printf ("A modalidade do atleta eh %s \n",modalidad[20]);
 }
    }
    return 0;
@@ -46,5 +46,6 @@ int main (void){
    }
    return modalidade;
    }
+
 
 
