@@ -1,6 +1,7 @@
 #include <stdio.h>
+char VerificaAtleta (char sexo,float peso);
 int main (void){
-    char VerificaAtleta (char sexo,float peso);
+    
     char modalidad[20];
     char sex;
     float pes;
