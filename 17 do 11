@@ -20,16 +20,16 @@ int main (void){
    }
 
    char VerificaAtleta (char sexo, float peso){
-       char modalidade;      
+       char modalidade;
    if (sexo=='m'){
    if (peso<=55){
    modalidade='SuperLigeiro';
    }
 
-   if (peso>=66 & peso <=73){
+   if (peso>=66 && peso <=73){
         modalidade='leve';
    }
-   if (peso>=83 & peso <=90){
+   if (peso>=83 && peso <=90){
         modalidade='media';
    }
    }
@@ -37,10 +37,10 @@ int main (void){
         if (peso<=50){
                 modalidade='SuperLigeiro';
         }
-        if (peso>=60 & peso <=70){
+        if (peso>=60 && peso <=70){
                 modalidade='leve';
         }
-        if (peso>=77 & peso<=85){
+        if (peso>=77 && peso<=85){
                 modalidade='media';
         }
    }
